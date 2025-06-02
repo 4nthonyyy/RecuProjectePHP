@@ -15,3 +15,21 @@ if (!$conexion) {
 // Opcional: Mensaje de éxito para depuración
 echo "Conexión exitosa";
 ?>
+
+<?php
+$host = "localhost"; // Servidor de base de datos
+$usuario = "phpanthony"; // Usuario de MySQL
+$contraseña = "Al0mne11!"; // Contraseña (si no tienes una, déjala vacía)
+$base_de_datos = "RecuPHP"; // Nombre de tu base de datos
+
+// Conectar a la base de datos
+$conexion = mysqli_connect($host, $usuario, $contraseña, $base_de_datos);
+
+// Verificar conexión
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+
+// Opcional: Mensaje de éxito para depuración
+echo "Conexión exitosa";
+?>
